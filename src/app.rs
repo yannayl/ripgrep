@@ -2509,7 +2509,7 @@ Show results with every match on its own line, including line numbers and
 column numbers. With this option, a line with more than one match will be
 printed more than once.
 ");
-    let arg = RGArg::switch("vimgrep")
+    let arg = RGArg::switch("vimgrep").alias("vg")
         .help(SHORT).long_help(LONG);
     args.push(arg);
 }
